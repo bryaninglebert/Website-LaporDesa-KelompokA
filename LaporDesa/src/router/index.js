@@ -52,7 +52,7 @@ const routes = [
 
 // 3. Buat instansi router
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes, // Gunakan array routes di atas
 })
 
